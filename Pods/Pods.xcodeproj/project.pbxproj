@@ -1,0 +1,974 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		19FBEA8AD30750FA14EA4597355E4458 /* Pods-MLNews-MLNewsUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8B98E9A81D242DD1880F26ED5882DE4 /* Pods-MLNews-MLNewsUITests-dummy.m */; };
+		27D5C7CED2798F1D9B159DA072C4FBAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		35E671795ECB3EC9639B07C9B79C7A3B /* Pods-MLNews-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B04E2C9653419A229B78FB6E88A470 /* Pods-MLNews-dummy.m */; };
+		450E5A5635DD07E9C7A3CD6D3FC3F7F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		515EEC502301B570EF1386F8BA40B88E /* Pods-MLNews-MLNewsUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D6ED8C7DD9BCC5FA59A61C8A33494AFC /* Pods-MLNews-MLNewsUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58BFFE7440AB7FDB9DFC2CD71072C89C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		93D44F53279AF04A02EF1D9E9E2AA632 /* DocumentClassification.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 44B44B37F051E980178EDC772B87C7E9 /* DocumentClassification.mlmodel */; };
+		9DC4F43C1DF3FEFF844D571BE6445EEE /* DocumentClassifier-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CA94BAA567FE63BE06D3C5C3DAC448BE /* DocumentClassifier-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9EF58414A3DCABB9AAD790ABE8AD552D /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBC3B8D0DC3C7C2D6445A8C927C833A /* Classification.swift */; };
+		A7255EF38719592E8018F9E1B8C28FA2 /* Pods-MLNewsTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A6CEDBD0C1A75FB1E86579F805E73381 /* Pods-MLNewsTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACC17CF0FAED976B3016BC4849CEA7FA /* DocumentClassifier-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D7CACBC79BFC22D8EC0B9BB5A06999 /* DocumentClassifier-dummy.m */; };
+		B710825A191D95E40085D396505021A0 /* Pods-MLNews-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D17BA57C8AD86BA5DB1B00829B41BF2 /* Pods-MLNews-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBF826E8A80B9884DC13AC0BF4818258 /* DocumentClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23733806E113DCF3197AF50144E8461C /* DocumentClassifier.swift */; };
+		D3ECFB881F960F0462091ECBA5E85ACE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E635BDF200CDB365B387405D1AC461D9 /* Pods-MLNewsTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2347F902749FF7BCBB2B5D815041964A /* Pods-MLNewsTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		23CC1A2037C95EA7E6DEAE2912B02E43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61C7B7A600695BC962CDAD970FC6BB21;
+			remoteInfo = "Pods-MLNews";
+		};
+		40FD00BF473F15816734E2D9650CAF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D6B234E08F26654DBC60F0DB9F37AA9;
+			remoteInfo = DocumentClassifier;
+		};
+		B2DD94DDCF96E5F0B08859F071D1838A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D6B234E08F26654DBC60F0DB9F37AA9;
+			remoteInfo = DocumentClassifier;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0FE755BEC872D3A854211F1A6F1F236B /* Pods-MLNews-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MLNews-acknowledgements.markdown"; sourceTree = "<group>"; };
+		11502F4FAB1A199A340AAE01E7A9EF6E /* DocumentClassifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DocumentClassifier.debug.xcconfig; sourceTree = "<group>"; };
+		156C22E6B9439410198C25FCF4C91ADF /* Pods-MLNews */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MLNews"; path = Pods_MLNews.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B5D51A4ACEA65A7AC1ACC43B5E02DF /* Pods-MLNewsTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MLNewsTests.modulemap"; sourceTree = "<group>"; };
+		2347F902749FF7BCBB2B5D815041964A /* Pods-MLNewsTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MLNewsTests-dummy.m"; sourceTree = "<group>"; };
+		23733806E113DCF3197AF50144E8461C /* DocumentClassifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DocumentClassifier.swift; path = Sources/DocumentClassifier.swift; sourceTree = "<group>"; };
+		23AA033F166F55A76A2BA50B96CAB960 /* DocumentClassifier */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DocumentClassifier; path = DocumentClassifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C7EC563ABDC4D1CB4E5BE4532A75238 /* Pods-MLNews.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MLNews.modulemap"; sourceTree = "<group>"; };
+		2D17BA57C8AD86BA5DB1B00829B41BF2 /* Pods-MLNews-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLNews-umbrella.h"; sourceTree = "<group>"; };
+		37D7CACBC79BFC22D8EC0B9BB5A06999 /* DocumentClassifier-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DocumentClassifier-dummy.m"; sourceTree = "<group>"; };
+		44B44B37F051E980178EDC772B87C7E9 /* DocumentClassification.mlmodel */ = {isa = PBXFileReference; includeInIndex = 1; name = DocumentClassification.mlmodel; path = Sources/DocumentClassification.mlmodel; sourceTree = "<group>"; };
+		47247EEB6358513710A92ADF84254E96 /* Pods-MLNews-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLNews-acknowledgements.plist"; sourceTree = "<group>"; };
+		561D59EFEAB351F6C8158390A9220515 /* Pods-MLNews-MLNewsUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLNews-MLNewsUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		59836E7A3E5A2BD86CCC23BA1DF1AC0C /* Pods-MLNews-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLNews-frameworks.sh"; sourceTree = "<group>"; };
+		5B13A566F5CF58599606ACF87995B072 /* Pods-MLNews-MLNewsUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MLNews-MLNewsUITests"; path = Pods_MLNews_MLNewsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		614C49906E9E80695F0B914D7795A23B /* Pods-MLNewsTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MLNewsTests"; path = Pods_MLNewsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67B04E2C9653419A229B78FB6E88A470 /* Pods-MLNews-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MLNews-dummy.m"; sourceTree = "<group>"; };
+		68CBF11C751CA2C3AD35A22F3764D845 /* Pods-MLNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLNews.release.xcconfig"; sourceTree = "<group>"; };
+		6C89B1A666E6046D0A0A1A18A32396AE /* Pods-MLNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6E0A413A2A49A3472961A7E4C8589B6A /* Pods-MLNewsTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MLNewsTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73712A6D2DE06AFF97D29CF16A5D0FF8 /* DocumentClassifier-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DocumentClassifier-Info.plist"; sourceTree = "<group>"; };
+		785B6039AA90C31C7E2231766BFED785 /* Pods-MLNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLNewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		80F90AB56CF4DD71696E6D982BEA52C3 /* Pods-MLNews-MLNewsUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MLNews-MLNewsUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86A6CDBE82B71AE0003BBDC758D85712 /* Pods-MLNews-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLNews-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EBC3B8D0DC3C7C2D6445A8C927C833A /* Classification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Classification.swift; path = Sources/Classification.swift; sourceTree = "<group>"; };
+		A6CEDBD0C1A75FB1E86579F805E73381 /* Pods-MLNewsTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLNewsTests-umbrella.h"; sourceTree = "<group>"; };
+		AAB82E851145CA412E8F44C442F1FAEB /* DocumentClassifier-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DocumentClassifier-prefix.pch"; sourceTree = "<group>"; };
+		C1EF094A34681F82A488B05EF5F9EB1F /* Pods-MLNews-MLNewsUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLNews-MLNewsUITests-frameworks.sh"; sourceTree = "<group>"; };
+		CA94BAA567FE63BE06D3C5C3DAC448BE /* DocumentClassifier-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DocumentClassifier-umbrella.h"; sourceTree = "<group>"; };
+		D10D2520F4C43661CA3AD84B0BC4933F /* Pods-MLNews-MLNewsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLNews-MLNewsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D6ED8C7DD9BCC5FA59A61C8A33494AFC /* Pods-MLNews-MLNewsUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLNews-MLNewsUITests-umbrella.h"; sourceTree = "<group>"; };
+		D83A15CD3EB742AD28CFA60E64439D88 /* Pods-MLNews-MLNewsUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLNews-MLNewsUITests-Info.plist"; sourceTree = "<group>"; };
+		DBA2F093F94A3C2C1A1FBBE71226B7D8 /* DocumentClassifier.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DocumentClassifier.modulemap; sourceTree = "<group>"; };
+		DBE56BFEE8BB65645BC6712ED06702A7 /* Pods-MLNewsTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLNewsTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DDAC7F2CA2E1612DF2BF0E4D1330E811 /* Pods-MLNewsTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLNewsTests-Info.plist"; sourceTree = "<group>"; };
+		E5A80E3C9EC328D4A8B628C252D66D55 /* DocumentClassifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DocumentClassifier.release.xcconfig; sourceTree = "<group>"; };
+		E8B98E9A81D242DD1880F26ED5882DE4 /* Pods-MLNews-MLNewsUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MLNews-MLNewsUITests-dummy.m"; sourceTree = "<group>"; };
+		E9BB46F25BCF849D650B1B9FBE860528 /* Pods-MLNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLNews.debug.xcconfig"; sourceTree = "<group>"; };
+		EA4F48EC5865C5AE676FC56035C53463 /* Pods-MLNews-MLNewsUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MLNews-MLNewsUITests.modulemap"; sourceTree = "<group>"; };
+		FC5CBA3A501ADC275BC31107F71BE059 /* Pods-MLNews-MLNewsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLNews-MLNewsUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28639AA4D9274B1528225E3E56D34210 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3ECFB881F960F0462091ECBA5E85ACE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5334D0C595EBEC64126623DF659550B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				450E5A5635DD07E9C7A3CD6D3FC3F7F3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6061CAEF7395745135485D5541423587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27D5C7CED2798F1D9B159DA072C4FBAA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8352A1BF09AC2C41911FAD4171E5969 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58BFFE7440AB7FDB9DFC2CD71072C89C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0391621CEF5EF973AEE8A9F36924A803 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DBA2F093F94A3C2C1A1FBBE71226B7D8 /* DocumentClassifier.modulemap */,
+				37D7CACBC79BFC22D8EC0B9BB5A06999 /* DocumentClassifier-dummy.m */,
+				73712A6D2DE06AFF97D29CF16A5D0FF8 /* DocumentClassifier-Info.plist */,
+				AAB82E851145CA412E8F44C442F1FAEB /* DocumentClassifier-prefix.pch */,
+				CA94BAA567FE63BE06D3C5C3DAC448BE /* DocumentClassifier-umbrella.h */,
+				11502F4FAB1A199A340AAE01E7A9EF6E /* DocumentClassifier.debug.xcconfig */,
+				E5A80E3C9EC328D4A8B628C252D66D55 /* DocumentClassifier.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DocumentClassifier";
+			sourceTree = "<group>";
+		};
+		1C5E3D9301107F067AC00DCBFEDEEE0C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				23AA033F166F55A76A2BA50B96CAB960 /* DocumentClassifier */,
+				156C22E6B9439410198C25FCF4C91ADF /* Pods-MLNews */,
+				5B13A566F5CF58599606ACF87995B072 /* Pods-MLNews-MLNewsUITests */,
+				614C49906E9E80695F0B914D7795A23B /* Pods-MLNewsTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CD271B9EFA7DBC0569ECF72E8785EB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				927834812AA867CA9A9E0E437AFA0298 /* DocumentClassifier */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		331BD56F58DE22F462581C9AEC201F58 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0B9466EB298713BD7E6C822B5A42192 /* Pods-MLNews */,
+				78C6FC4199D6C798E1FAF8630437099D /* Pods-MLNews-MLNewsUITests */,
+				A1CD131C0E6DDFCCD9D89EE9389AE564 /* Pods-MLNewsTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		78C6FC4199D6C798E1FAF8630437099D /* Pods-MLNews-MLNewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA4F48EC5865C5AE676FC56035C53463 /* Pods-MLNews-MLNewsUITests.modulemap */,
+				80F90AB56CF4DD71696E6D982BEA52C3 /* Pods-MLNews-MLNewsUITests-acknowledgements.markdown */,
+				561D59EFEAB351F6C8158390A9220515 /* Pods-MLNews-MLNewsUITests-acknowledgements.plist */,
+				E8B98E9A81D242DD1880F26ED5882DE4 /* Pods-MLNews-MLNewsUITests-dummy.m */,
+				C1EF094A34681F82A488B05EF5F9EB1F /* Pods-MLNews-MLNewsUITests-frameworks.sh */,
+				D83A15CD3EB742AD28CFA60E64439D88 /* Pods-MLNews-MLNewsUITests-Info.plist */,
+				D6ED8C7DD9BCC5FA59A61C8A33494AFC /* Pods-MLNews-MLNewsUITests-umbrella.h */,
+				D10D2520F4C43661CA3AD84B0BC4933F /* Pods-MLNews-MLNewsUITests.debug.xcconfig */,
+				FC5CBA3A501ADC275BC31107F71BE059 /* Pods-MLNews-MLNewsUITests.release.xcconfig */,
+			);
+			name = "Pods-MLNews-MLNewsUITests";
+			path = "Target Support Files/Pods-MLNews-MLNewsUITests";
+			sourceTree = "<group>";
+		};
+		927834812AA867CA9A9E0E437AFA0298 /* DocumentClassifier */ = {
+			isa = PBXGroup;
+			children = (
+				9EBC3B8D0DC3C7C2D6445A8C927C833A /* Classification.swift */,
+				44B44B37F051E980178EDC772B87C7E9 /* DocumentClassification.mlmodel */,
+				23733806E113DCF3197AF50144E8461C /* DocumentClassifier.swift */,
+				0391621CEF5EF973AEE8A9F36924A803 /* Support Files */,
+			);
+			name = DocumentClassifier;
+			path = DocumentClassifier;
+			sourceTree = "<group>";
+		};
+		A1CD131C0E6DDFCCD9D89EE9389AE564 /* Pods-MLNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B5D51A4ACEA65A7AC1ACC43B5E02DF /* Pods-MLNewsTests.modulemap */,
+				6E0A413A2A49A3472961A7E4C8589B6A /* Pods-MLNewsTests-acknowledgements.markdown */,
+				DBE56BFEE8BB65645BC6712ED06702A7 /* Pods-MLNewsTests-acknowledgements.plist */,
+				2347F902749FF7BCBB2B5D815041964A /* Pods-MLNewsTests-dummy.m */,
+				DDAC7F2CA2E1612DF2BF0E4D1330E811 /* Pods-MLNewsTests-Info.plist */,
+				A6CEDBD0C1A75FB1E86579F805E73381 /* Pods-MLNewsTests-umbrella.h */,
+				6C89B1A666E6046D0A0A1A18A32396AE /* Pods-MLNewsTests.debug.xcconfig */,
+				785B6039AA90C31C7E2231766BFED785 /* Pods-MLNewsTests.release.xcconfig */,
+			);
+			name = "Pods-MLNewsTests";
+			path = "Target Support Files/Pods-MLNewsTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				2CD271B9EFA7DBC0569ECF72E8785EB1 /* Pods */,
+				1C5E3D9301107F067AC00DCBFEDEEE0C /* Products */,
+				331BD56F58DE22F462581C9AEC201F58 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E0B9466EB298713BD7E6C822B5A42192 /* Pods-MLNews */ = {
+			isa = PBXGroup;
+			children = (
+				2C7EC563ABDC4D1CB4E5BE4532A75238 /* Pods-MLNews.modulemap */,
+				0FE755BEC872D3A854211F1A6F1F236B /* Pods-MLNews-acknowledgements.markdown */,
+				47247EEB6358513710A92ADF84254E96 /* Pods-MLNews-acknowledgements.plist */,
+				67B04E2C9653419A229B78FB6E88A470 /* Pods-MLNews-dummy.m */,
+				59836E7A3E5A2BD86CCC23BA1DF1AC0C /* Pods-MLNews-frameworks.sh */,
+				86A6CDBE82B71AE0003BBDC758D85712 /* Pods-MLNews-Info.plist */,
+				2D17BA57C8AD86BA5DB1B00829B41BF2 /* Pods-MLNews-umbrella.h */,
+				E9BB46F25BCF849D650B1B9FBE860528 /* Pods-MLNews.debug.xcconfig */,
+				68CBF11C751CA2C3AD35A22F3764D845 /* Pods-MLNews.release.xcconfig */,
+			);
+			name = "Pods-MLNews";
+			path = "Target Support Files/Pods-MLNews";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5E53033AD6AA72F8D49A8DF98ECC8A2E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7255EF38719592E8018F9E1B8C28FA2 /* Pods-MLNewsTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A2C0CCC131F2AD5C7483992D5CD9069 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				515EEC502301B570EF1386F8BA40B88E /* Pods-MLNews-MLNewsUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87F3CC075DE4223A3A6D83CD3F479834 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B710825A191D95E40085D396505021A0 /* Pods-MLNews-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEA413832B52F2697343FE3A430D1AD9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DC4F43C1DF3FEFF844D571BE6445EEE /* DocumentClassifier-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D6B234E08F26654DBC60F0DB9F37AA9 /* DocumentClassifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93929E5A814A18D40EA273354FCBF548 /* Build configuration list for PBXNativeTarget "DocumentClassifier" */;
+			buildPhases = (
+				EEA413832B52F2697343FE3A430D1AD9 /* Headers */,
+				0AE4846A9D02E14E8B603C950447E8EF /* Sources */,
+				A8352A1BF09AC2C41911FAD4171E5969 /* Frameworks */,
+				9F7963A2778FB7F3BFEE8DB86BFFB70F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocumentClassifier;
+			productName = DocumentClassifier;
+			productReference = 23AA033F166F55A76A2BA50B96CAB960 /* DocumentClassifier */;
+			productType = "com.apple.product-type.framework";
+		};
+		61C7B7A600695BC962CDAD970FC6BB21 /* Pods-MLNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9FE7272DB56EB8772FFED9153E990E /* Build configuration list for PBXNativeTarget "Pods-MLNews" */;
+			buildPhases = (
+				87F3CC075DE4223A3A6D83CD3F479834 /* Headers */,
+				B8F6832D440FB6160479CB403D68AD41 /* Sources */,
+				6061CAEF7395745135485D5541423587 /* Frameworks */,
+				475FE61E94F5139ABF9CD04DD02E7D47 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				114212524A260DF6D1ECC6FFD20142D6 /* PBXTargetDependency */,
+			);
+			name = "Pods-MLNews";
+			productName = Pods_MLNews;
+			productReference = 156C22E6B9439410198C25FCF4C91ADF /* Pods-MLNews */;
+			productType = "com.apple.product-type.framework";
+		};
+		8213F7B81F40FAA5CFFA2A258EB3DC62 /* Pods-MLNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2509268990451EC00A0947212D3722E9 /* Build configuration list for PBXNativeTarget "Pods-MLNewsTests" */;
+			buildPhases = (
+				5E53033AD6AA72F8D49A8DF98ECC8A2E /* Headers */,
+				3D6A7DA1783D5C34323E2633FC1AE6DB /* Sources */,
+				28639AA4D9274B1528225E3E56D34210 /* Frameworks */,
+				98B54F6D9C248E3B608B2C8A7957DF9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6005996FFEE312C7D5C13ECE425F243C /* PBXTargetDependency */,
+			);
+			name = "Pods-MLNewsTests";
+			productName = Pods_MLNewsTests;
+			productReference = 614C49906E9E80695F0B914D7795A23B /* Pods-MLNewsTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8FA02E33D2EEA83044BAB2B636F8FB8 /* Pods-MLNews-MLNewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46621D56F94A2CA15BC4FC481CC065DB /* Build configuration list for PBXNativeTarget "Pods-MLNews-MLNewsUITests" */;
+			buildPhases = (
+				7A2C0CCC131F2AD5C7483992D5CD9069 /* Headers */,
+				FE0A85B5BF61E556795C946CB892E9D9 /* Sources */,
+				5334D0C595EBEC64126623DF659550B3 /* Frameworks */,
+				4F49016B548772FB619FABBBFE26E85A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CFC5AF434F0B33ED8EEBC42093D94D0 /* PBXTargetDependency */,
+			);
+			name = "Pods-MLNews-MLNewsUITests";
+			productName = Pods_MLNews_MLNewsUITests;
+			productReference = 5B13A566F5CF58599606ACF87995B072 /* Pods-MLNews-MLNewsUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1C5E3D9301107F067AC00DCBFEDEEE0C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D6B234E08F26654DBC60F0DB9F37AA9 /* DocumentClassifier */,
+				61C7B7A600695BC962CDAD970FC6BB21 /* Pods-MLNews */,
+				C8FA02E33D2EEA83044BAB2B636F8FB8 /* Pods-MLNews-MLNewsUITests */,
+				8213F7B81F40FAA5CFFA2A258EB3DC62 /* Pods-MLNewsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		475FE61E94F5139ABF9CD04DD02E7D47 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F49016B548772FB619FABBBFE26E85A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B54F6D9C248E3B608B2C8A7957DF9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F7963A2778FB7F3BFEE8DB86BFFB70F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AE4846A9D02E14E8B603C950447E8EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF58414A3DCABB9AAD790ABE8AD552D /* Classification.swift in Sources */,
+				93D44F53279AF04A02EF1D9E9E2AA632 /* DocumentClassification.mlmodel in Sources */,
+				CBF826E8A80B9884DC13AC0BF4818258 /* DocumentClassifier.swift in Sources */,
+				ACC17CF0FAED976B3016BC4849CEA7FA /* DocumentClassifier-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D6A7DA1783D5C34323E2633FC1AE6DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E635BDF200CDB365B387405D1AC461D9 /* Pods-MLNewsTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8F6832D440FB6160479CB403D68AD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35E671795ECB3EC9639B07C9B79C7A3B /* Pods-MLNews-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE0A85B5BF61E556795C946CB892E9D9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19FBEA8AD30750FA14EA4597355E4458 /* Pods-MLNews-MLNewsUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		114212524A260DF6D1ECC6FFD20142D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DocumentClassifier;
+			target = 5D6B234E08F26654DBC60F0DB9F37AA9 /* DocumentClassifier */;
+			targetProxy = 40FD00BF473F15816734E2D9650CAF8C /* PBXContainerItemProxy */;
+		};
+		6005996FFEE312C7D5C13ECE425F243C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MLNews";
+			target = 61C7B7A600695BC962CDAD970FC6BB21 /* Pods-MLNews */;
+			targetProxy = 23CC1A2037C95EA7E6DEAE2912B02E43 /* PBXContainerItemProxy */;
+		};
+		6CFC5AF434F0B33ED8EEBC42093D94D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DocumentClassifier;
+			target = 5D6B234E08F26654DBC60F0DB9F37AA9 /* DocumentClassifier */;
+			targetProxy = B2DD94DDCF96E5F0B08859F071D1838A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		45285987FDC204B9DB7C0228892D4B3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5FE8DA4FD84782215619B64F40390C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC5CBA3A501ADC275BC31107F71BE059 /* Pods-MLNews-MLNewsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLNews-MLNewsUITests/Pods-MLNews-MLNewsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLNews-MLNewsUITests/Pods-MLNews-MLNewsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6AF9D8D0B4F4FA4695A8EEF773CD3FBC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		760670824CED49A8194AFF963333BC97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68CBF11C751CA2C3AD35A22F3764D845 /* Pods-MLNews.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLNews/Pods-MLNews-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLNews/Pods-MLNews.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		79CBD53CAEC623439CDEFCDD3E6C1A64 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C89B1A666E6046D0A0A1A18A32396AE /* Pods-MLNewsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLNewsTests/Pods-MLNewsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLNewsTests/Pods-MLNewsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		922CE81E1B50F73D6C6C441EF4B64B4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5A80E3C9EC328D4A8B628C252D66D55 /* DocumentClassifier.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DocumentClassifier/DocumentClassifier-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DocumentClassifier/DocumentClassifier-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DocumentClassifier/DocumentClassifier.modulemap";
+				PRODUCT_MODULE_NAME = DocumentClassifier;
+				PRODUCT_NAME = DocumentClassifier;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		96912759266654B542923F601B539215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 785B6039AA90C31C7E2231766BFED785 /* Pods-MLNewsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLNewsTests/Pods-MLNewsTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLNewsTests/Pods-MLNewsTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E0A71B96149921CCD2E93307768720B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9BB46F25BCF849D650B1B9FBE860528 /* Pods-MLNews.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLNews/Pods-MLNews-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLNews/Pods-MLNews.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C449CEE776A661C6B67C0D7F45E100C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D10D2520F4C43661CA3AD84B0BC4933F /* Pods-MLNews-MLNewsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLNews-MLNewsUITests/Pods-MLNews-MLNewsUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLNews-MLNewsUITests/Pods-MLNews-MLNewsUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D583145BE5217CC73DA3C0928671A843 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11502F4FAB1A199A340AAE01E7A9EF6E /* DocumentClassifier.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DocumentClassifier/DocumentClassifier-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DocumentClassifier/DocumentClassifier-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DocumentClassifier/DocumentClassifier.modulemap";
+				PRODUCT_MODULE_NAME = DocumentClassifier;
+				PRODUCT_NAME = DocumentClassifier;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2509268990451EC00A0947212D3722E9 /* Build configuration list for PBXNativeTarget "Pods-MLNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79CBD53CAEC623439CDEFCDD3E6C1A64 /* Debug */,
+				96912759266654B542923F601B539215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9FE7272DB56EB8772FFED9153E990E /* Build configuration list for PBXNativeTarget "Pods-MLNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E0A71B96149921CCD2E93307768720B /* Debug */,
+				760670824CED49A8194AFF963333BC97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46621D56F94A2CA15BC4FC481CC065DB /* Build configuration list for PBXNativeTarget "Pods-MLNews-MLNewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C449CEE776A661C6B67C0D7F45E100C1 /* Debug */,
+				5FE8DA4FD84782215619B64F40390C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45285987FDC204B9DB7C0228892D4B3E /* Debug */,
+				6AF9D8D0B4F4FA4695A8EEF773CD3FBC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93929E5A814A18D40EA273354FCBF548 /* Build configuration list for PBXNativeTarget "DocumentClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D583145BE5217CC73DA3C0928671A843 /* Debug */,
+				922CE81E1B50F73D6C6C441EF4B64B4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

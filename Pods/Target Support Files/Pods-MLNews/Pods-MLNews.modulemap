@@ -1,0 +1,6 @@
+framework module Pods_MLNews {
+  umbrella header "Pods-MLNews-umbrella.h"
+
+  export *
+  module * { export * }
+}
